@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0036)https://darkmodde.xyz/SAFE/ -->
+<html lang="pt-BR"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<!-- Informações básicas da página -->
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="TarefaSP hacks, TarefaSP scripts, Sala do Futuro hacks, Sala do Futuro scripts, Sala Sem Futuro hacks, Sala dos sem futuro scripts, CMSP Plataformas hacks, CMSP Plataformas scripts, LeiaMe CMSP hacks, Arvore de Livros hacks, Khan Academy automação, Scripts para Khan Academy, Hacks para Matific, Scripts Matific CMSP, Prova Paulista hacks, Redação Paulista scripts, Hacks para SPeak CMSP, Scripts para Alura educação, Expansão Noturno hacks, Ferramentas para estudantes CMSP, Automação de tarefas escolares SP, Scripts de ensino remoto, Hacks educacionais SP, Scripts de provas online, Gamificação na educação CMSP, Estudo online otimizado CMSP, Plataformas educacionais hacks SP, Sala dos Sem Futuro plataformas, Scripts Sala Sem Futuro" name="keywords"/>
+<link href="" rel="icon" type="image/png"/>
+<title>S.A.F.E.</title>
+<!-- Meta tags para redes sociais (Open Graph) -->
+<meta content="S.A.F.E." property="og:title"/>
+<meta content="" property="og:description"/>
+<meta content="" property="og:image"/>
+<meta content="https://" property="og:url"/>
+<meta content="website" property="og:type"/>
+<!-- Meta tags para Twitter -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="S.A.F.E." name="twitter:title"/>
+<meta content="" name="twitter:description"/>
+<meta content="" name="twitter:image"/>
+<!-- Otimização de fontes externas -->
+<link href="https://fonts.googleapis.com/" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="./S.A.F.E._files/css2" rel="stylesheet"/>
+<!-- Script de análise -->
+<style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #141414;
+            --bg-tertiary: #1f1f1f;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent-color: #ffffff;
+            --accent-hover: #e0e0e0;
+            --error-color: #ff4444;
+            --success-color: #44ff44;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            user-select: none;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px;
+            background-color: var(--bg-secondary);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: clamp(20px, 5vw, 40px);
+            animation: fadeInEnhanced 0.6s ease-out both;
+        }
+
+        .profile-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 30%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px;
+            border: 3px solid var(--accent-color);
+            pointer-events: none;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--accent-color);
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            animation: slideUpEnhanced 0.5s ease-out both;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: var(--bg-tertiary);
+            border: 1px solid #333;
+            border-radius: var(--border-radius);
+            font-size: 16px;
+            transition: var(--transition);
+            color: var(--text-primary);
+        }
+
+        input:focus, select:focus {
+            border-color: var(--accent-color);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(74, 128, 240, 0.2);
+        }
+
+        select option {
+            background-color: var(--bg-tertiary);
+            color: var(--text-primary);
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: black;
+            border: none;
+            padding: 12px 20px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-size: 16px;
+            transition: var(--transition);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        button:disabled {
+            background-color: #555;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background-color: var(--bg-secondary);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            max-width: 500px;
+            width: 95%;
+            margin: 20px;
+            box-shadow: var(--box-shadow);
+            animation: modalFadeIn 0.3s ease;
+            border: 1px solid #333;
+        }
+
+        .modal h2 {
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            text-align: center;
+        }
+
+        .progress-container {
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background-color: var(--bg-tertiary);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background: #6a5acd;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        .task-info {
+            margin-bottom: 15px;
+        }
+
+        .task-info p {
+            margin: 8px 0;
+            color: var(--text-secondary);
+        }
+
+        .time-remaining {
+            font-weight: bold;
+            color: var(--accent-color);
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .close-modal {
+            background-color: var(--error-color);
+            margin-top: 20px;
+        }
+
+        .close-modal:hover {
+            background-color: #d32f2f;
+        }
+
+        .loader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(74, 128, 240, 0.2);
+            border-radius: 50%;
+            border-top-color: var(--accent-color);
+            animation: spin 1s linear infinite;
+            margin-bottom: 10px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeInEnhanced {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--bg-secondary);
+            border: 2px solid var(--accent-color);
+            border-radius: var(--border-radius);
+            padding: 15px 20px;
+            max-width: 350px;
+            z-index: 9999;
+            box-shadow: var(--box-shadow);
+            animation: slideInRight 0.3s ease;
+            width: 90%;
+            margin: 10px;
+        }
+
+        .notification.success {
+            border-color: var(--success-color);
+        }
+
+        .notification.error {
+            border-color: var(--error-color);
+        }
+
+        .notification.info {
+            border-color: var(--accent-color);
+        }
+
+        .notification-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .notification-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 14px;
+        }
+
+        .notification-message {
+            color: var(--text-secondary);
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .time-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .time-inputs {
+            display: flex;
+            gap: 15px;
+            width: 100%;
+        }
+
+        .time-inputs .form-group {
+            flex: 1;
+            margin-bottom: 0;
+        }
+
+        .kill-tasks-btn {
+            width: 100%;
+            margin-top: 5px;
+        }
+    
+@keyframes fadeInEnhanced {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes slideUpEnhanced {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+input, select {
+  transition: all 0.3s ease;
+}
+input:focus, select:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 5px rgba(255,255,255,0.15);
+  outline: none;
+}
+select option {
+  background-color: #1f1f1f;
+  color: white;
+}
+.container {
+  animation: fadeInEnhanced 0.6s ease-out both;
+}
+form {
+  animation: slideUpEnhanced 0.6s ease-out both;
+}
+
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg fill='white' height='12' viewBox='0 0 24 24' width='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 30px;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 4px rgba(255,255,255,0.1);
+}
+
+button:active {
+  transform: scale(0.97);
+  background-color: #e0e0e0;
+}
+
+button::after {
+  content: "";
+  display: inline-block;
+  margin-left: 8px;
+  border: 2px solid transparent;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  animation: loadingArrow 0.6s ease-in-out infinite alternate;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+button:focus::after {
+  opacity: 1;
+}
+
+@keyframes loadingArrow {
+  from { transform: rotate(45deg) translateY(0); }
+  to { transform: rotate(45deg) translateY(3px); }
+}
+
+
+.toggle-eye {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 14px;
+  margin: auto 0;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  z-index: 2;
+}
+.form-group {
+  position: relative;
+}
+.form-group input:focus + .toggle-eye {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 14px;
+  margin: auto 0;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.password-wrapper:focus-within {
+  transform: scale(1.02);
+}
+.password-wrapper input {
+  flex: 1;
+  width: 100%;
+}
+.toggle-eye {
+  position: absolute;
+  right: 14px;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  z-index: 2;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+
+#saveProfile:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: white;
+  transform: scale(1.05);
+}
+
+
+a.footer-credit:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* Transições suaves para inputs, selects e botões */
+input, select, button {
+  transition: all 0.3s ease-in-out !important;
+}
+
+/* Input: zoom leve ao focar */
+input:focus, select:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 5px rgba(255,255,255,0.2);
+}
+
+/* Botões: destaque no hover */
+button:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Animação do botão de olho */
+.toggle-eye {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.toggle-eye:hover {
+  transform: scale(1.15) rotate(5deg);
+  opacity: 0.8;
+}
+
+/* Modal fade-in */
+#schedulerModal {
+  animation: fadeInModal 0.4s ease both;
+}
+@keyframes fadeInModal {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Tooltip credit hover (já presente) com suavidade extra */
+.footer-credit {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.scheduler-btn {
+  flex: 1;
+  background-color: #222;
+  color: white;
+  border: 1px solid #555;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.scheduler-btn:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+#taskSelectorList label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #181818;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+  transition: background 0.2s ease;
+}
+#taskSelectorList label:hover {
+  background-color: #202020;
+}
+.scheduler-btn {
+  width: 100%;
+  background-color: #222;
+  color: white;
+  border: 1px solid #555;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.scheduler-btn:hover {
+  background-color: #333;
+  transform: scale(1.02);
+}
+
+.task-checkbox {
+  flex-shrink: 0;
+  margin-top: 4px;
+  transform: scale(1.2);
+}
+.task-label {
+  flex-grow: 1;
+  line-height: 1.4;
+}
+
+#taskSelectorList label {
+  cursor: default;
+}
+.task-checkbox {
+  cursor: pointer;
+}
+
+#taskSelectorList label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background-color: #1a1a1a;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+  transition: background 0.2s ease;
+}
+#taskSelectorList label:hover {
+  background-color: #222;
+}
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<img alt="Perfil" class="profile-image" src="./assets/img/profile.png"/>
+<h1>S.A.F.E.</h1>
+<form id="Enviar">
+<div class="form-group">
+<label for="profile">Profile:</label>
+<div class="profile-wrapper" style="display: flex; gap: 10px; align-items: center;">
+<select id="profile" style="flex: 1; padding: 10px; border-radius: 12px; background-color: #1f1f1f; color: white; border: none;">
+<option disabled="" selected="" value="">Select a profile</option>
+</select>
+<button id="saveProfile" style="
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 10px 16px;
+      border-radius: 12px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1;
+      transition: all 0.25s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    " type="button">ADD</button>
+<button id="deleteProfile" style="
+  background-color: transparent;
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: #ff6666;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.25s ease;
+" type="button">DEL</button>
+</div>
+</div>
+<div class="form-group">
+<label for="ra">Academic Registry (RA):</label>
+<input id="ra" placeholder="Enter your RA" required="" type="text"/>
+</div>
+<div class="form-group" style="position: relative;"><div class="password-wrapper" style="position: relative; display: flex; align-items: center;"><input id="senha" placeholder="Enter your password" required="" type="password"/>
+<span class="toggle-eye" id="togglePassword">
+<svg fill="none" height="20" stroke="white" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</span>
+</div></div>
+<div class="form-group time-container">
+<div class="time-inputs">
+<div class="form-group">
+<label for="tempoMin">Min:</label>
+<select id="tempoMin" required="">
+<option selected="" value="60">01 Minute</option>
+<option value="120">02 Minutes</option>
+<option value="180">03 Minutes</option>
+<option value="300">05 Minutes</option>
+<option value="480">08 Minutes</option>
+<option value="600">10 Minutes</option>
+</select>
+</div>
+<div class="form-group">
+<label for="tempoMax">Max:</label>
+<select id="tempoMax" required="">
+<option value="60">01 Minute</option>
+<option selected="" value="120">02 Minutes</option>
+<option value="180">03 Minutes</option>
+<option value="300">05 Minutes</option>
+<option value="480">08 Minutes</option>
+<option value="600">10 Minutes</option>
+</select>
+</div>
+</div>
+<button class="kill-tasks-btn" id="submitBtn" type="submit">START TASKS</button>
+</div>
+<div class="form-group">
+<button id="openScheduler" style="
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 16px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+  " type="button">⚙️ Configure Auto Scheduler</button>
+</div>
+</form>
+<div class="modal" id="progressModal">
+<div class="modal-content">
+<div class="loader">
+<div class="spinner"></div>
+</div>
+<h2 id="modalTitle">Loading Tasks</h2>
+<div class="task-info">
+<p><strong>Status:</strong> <span id="currentStatus">Starting...</span></p>
+<p><strong>Tasks Found:</strong> <span id="totalTasksFound">0</span></p>
+<p><strong>Time Remaining:</strong> <span class="time-remaining" id="timeRemaining">0:00</span></p>
+</div>
+<div class="progress-container">
+<div class="progress-bar">
+<div class="progress" id="progressBar"></div>
+</div>
+</div>
+<button class="close-modal" id="closeModal">Cancel</button>
+</div>
+</div>
+</div>
+<script>
+  const profileSelect = document.getElementById("profile");
+  const saveButton = document.getElementById("saveProfile");
+  const raField = document.getElementById("ra");
+  const senhaField = document.getElementById("senha");
+  const togglePassword = document.getElementById("togglePassword");
+
+  function loadProfiles() {
+    const profiles = JSON.parse(localStorage.getItem("safeProfiles") || "[]");
+    profileSelect.innerHTML = '<option value="" disabled selected>Select a profile</option>';
+    profiles.forEach((p, i) => {
+      const opt = document.createElement("option");
+      opt.value = i.toString();
+      opt.textContent = p.name;
+      profileSelect.appendChild(opt);
+    });
+  }
+
+  saveButton.onclick = () => {
+    const name = prompt("Enter a name for this profile:");
+    const ra = raField.value.trim();
+    const senha = senhaField.value.trim();
+    if (!name || !ra || !senha) {
+      alert("Please fill in RA, password and a name.");
+      return;
+    }
+    const profiles = JSON.parse(localStorage.getItem("safeProfiles") || "[]");
+    profiles.push({ name, ra, senha });
+    localStorage.setItem("safeProfiles", JSON.stringify(profiles));
+    loadProfiles();
+    alert("Profile saved!");
+  };
+
+  profileSelect.onchange = () => {
+    const profiles = JSON.parse(localStorage.getItem("safeProfiles") || "[]");
+    const index = parseInt(profileSelect.value, 10);
+    const p = profiles[index];
+    if (p) {
+      raField.value = p.ra;
+      senhaField.value = p.senha;
+    }
+  };
+
+  togglePassword.addEventListener("click", () => {
+    const isVisible = senhaField.type === "text";
+    senhaField.type = isVisible ? "password" : "text";
+    togglePassword.style.opacity = 0.6;
+    togglePassword.style.transform = isVisible ? "scale(1)" : "scale(1.1)";
+    setTimeout(() => {
+      togglePassword.style.opacity = 1;
+      togglePassword.style.transform = "scale(1)";
+    }, 150);
+  });
+
+  window.addEventListener("load", loadProfiles);
+
+const deleteButton = document.getElementById("deleteProfile");
+deleteButton.onclick = () => {
+  const index = profileSelect.value;
+  if (index === "") {
+    alert("Select a profile to delete.");
+    return;
+  }
+  const profiles = JSON.parse(localStorage.getItem("safeProfiles") || "[]");
+  if (confirm("Are you sure you want to delete this profile?")) {
+    profiles.splice(Number(index), 1);
+    localStorage.setItem("safeProfiles", JSON.stringify(profiles));
+    loadProfiles();
+    profileSelect.selectedIndex = 0;
+    raField.value = "";
+    senhaField.value = "";
+    alert("Profile deleted.");
+  }
+};
+</script>
+<div style="
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  pointer-events: none;
+  z-index: 9999;
+">
+  Made by @tavvkkj
+</div>
+<div style="
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  pointer-events: auto;
+  z-index: 9999;
+">
+<a class="footer-credit" href="https://www.tiktok.com/@tavvkkj" style="text-decoration: none; color: #888;" target="_blank">
+    Made by @tavvkkj
+  </a>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const openModalBtn = document.getElementById("openScheduler");
+    const modal = document.getElementById("schedulerModal");
+    const closeBtn = document.getElementById("closeScheduler");
+    const scheduleBtn = document.getElementById("saveSchedule");
+    const clearBtn = document.getElementById("clearSchedule");
+    const autoProfile = document.getElementById("autoScheduleProfile");
+    const raField = document.getElementById("ra");
+    const senhaField = document.getElementById("senha");
+
+    if (openModalBtn) {
+      openModalBtn.onclick = () => {
+        fillAutoProfileOptions();
+        modal.style.display = "flex";
+      };
+    }
+
+    if (closeBtn) {
+      closeBtn.onclick = () => {
+        modal.style.display = "none";
+      };
+    }
+
+    function fillAutoProfileOptions() {
+      const profiles = JSON.parse(localStorage.getItem("safeProfiles") || "[]");
+      autoProfile.innerHTML = "";
+      profiles.forEach((p, i) => {
+        const opt = document.createElement("option");
+        opt.value = i.toString();
+        opt.textContent = p.name;
+        autoProfile.appendChild(opt);
+      });
+    }
+
+    scheduleBtn.onclick = () => {
+      const time = document.getElementById("autoScheduleTime").value;
+      const profileIndex = document.getElementById("autoScheduleProfile").value;
+      const taskType = document.getElementById("autoScheduleType").value;
+      const taskTime = document.getElementById("autoScheduleTimeRange").value;
+      if (!time || profileIndex === "") {
+        alert("Please select all fields before scheduling.");
+        return;
+      }
+      const data = { time, profileIndex, taskType, taskTime };
+      localStorage.setItem("autoSchedule", JSON.stringify(data));
+      alert("Scheduled successfully for " + time);
+      modal.style.display = "none";
+    };
+
+    clearBtn.onclick = () => {
+      localStorage.removeItem("autoSchedule");
+      alert("Auto-schedule removed.");
+      modal.style.display = "none";
+    };
+
+    function checkAndRunScheduledTask() {
+      const schedule = JSON.parse(localStorage.getItem("autoSchedule") || "null");
+      if (!schedule) return;
+
+      const now = new Date();
+      const currentTime = now.toTimeString().slice(0, 5);
+      if (currentTime === schedule.time) {
+        const profiles = JSON.parse(localStorage.getItem("safeProfiles") || "[]");
+        const profile = profiles[parseInt(schedule.profileIndex)];
+        if (profile) {
+          raField.value = profile.ra;
+          senhaField.value = profile.senha;
+          document.getElementById("tempoMin").value = schedule.taskTime;
+          document.getElementById("tempoMax").value = schedule.taskTime;
+          document.getElementById("submitBtn").click();
+        }
+      }
+    }
+
+    setInterval(checkAndRunScheduledTask, 60000);
+  });
+</script>
+<div class="modal" id="schedulerModal" style="display:none;">
+<div class="modal-content" style="max-width: 500px;">
+<div id="schedulePreview" style="margin-bottom: 20px; padding: 12px; border: 1px solid #444; border-radius: 8px; background-color: #111; font-size: 14px; color: #ccc;">
+      No schedule saved.
+    </div>
+<h2 style="text-align: center; margin-bottom: 20px;">Auto Task Scheduler</h2>
+<div class="form-group">
+<label for="autoScheduleTime">Schedule Time:</label>
+<input id="autoScheduleTime" list="scheduleTimes" name="autoScheduleTime" style="width: 100%; padding: 12px 15px; background-color: var(--bg-tertiary); border: 1px solid #333; border-radius: var(--border-radius); font-size: 16px; color: var(--text-primary);"/>
+<datalist id="scheduleTimes">
+<option value="00:00">
+<option value="00:30">
+<option value="01:00">
+<option value="01:30">
+<option value="02:00">
+<option value="02:30">
+<option value="03:00">
+<option value="03:30">
+<option value="04:00">
+<option value="04:30">
+<option value="05:00">
+<option value="05:30">
+<option value="06:00">
+<option value="06:30">
+<option value="07:00">
+<option value="07:30">
+<option value="08:00">
+<option value="08:30">
+<option value="09:00">
+<option value="09:30">
+<option value="10:00">
+<option value="10:30">
+<option value="11:00">
+<option value="11:30">
+<option value="12:00">
+<option value="12:30">
+<option value="13:00">
+<option value="13:30">
+<option value="14:00">
+<option value="14:30">
+<option value="15:00">
+<option value="15:30">
+<option value="16:00">
+<option value="16:30">
+<option value="17:00">
+<option value="17:30">
+<option value="18:00">
+<option value="18:30">
+<option value="19:00">
+<option value="19:30">
+<option value="20:00">
+<option value="20:30">
+<option value="21:00">
+<option value="21:30">
+<option value="22:00">
+<option value="22:30">
+<option value="23:00">
+<option value="23:30">
+</option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></datalist>
+</div>
+<div class="form-group">
+<label for="autoScheduleMin">Minimum Time (minutes):</label>
+<select id="autoScheduleMin">
+<option selected="selected" value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="05">05</option>
+<option value="08">08</option>
+<option value="10">10</option>
+</select>
+</div>
+<div class="form-group">
+<label for="autoScheduleMax">Maximum Time (minutes):</label>
+<select id="autoScheduleMax">
+<option value="01">01</option>
+<option selected="selected" value="02">02</option>
+<option value="03">03</option>
+<option value="05">05</option>
+<option value="08">08</option>
+<option value="10">10</option>
+</select>
+</div>
+<div class="form-group">
+<label for="autoScheduleProfile">Profile:</label>
+<select id="autoScheduleProfile"><option disabled="disabled" selected="selected" value="">Select profile</option></select>
+</div>
+<div class="form-group">
+<label for="autoScheduleType">Task Type:</label>
+<select id="autoScheduleType">
+<option value="all">All Tasks</option>
+<option value="expired">Only Expired</option>
+<option value="notexpired">Only Not Expired</option>
+</select>
+</div>
+<div class="form-group" style="display: flex; gap: 10px; width: 100%;">
+<button class="scheduler-btn" id="saveSchedule" type="button">Save</button>
+<button class="scheduler-btn" id="clearSchedule" type="button">Delete</button>
+<button class="scheduler-btn" id="closeScheduler" type="button">Cancel</button>
+</div>
+</div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const openModalBtn = document.getElementById("openScheduler");
+    const modal = document.getElementById("schedulerModal");
+    const closeBtn = document.getElementById("closeScheduler");
+    const scheduleBtn = document.getElementById("saveSchedule");
+    const clearBtn = document.getElementById("clearSchedule");
+    const autoProfile = document.getElementById("autoScheduleProfile");
+    const raField = document.getElementById("ra");
+    const senhaField = document.getElementById("senha");
+
+    if (openModalBtn) {
+      openModalBtn.onclick = () => {
+        fillAutoProfileOptions();
+        modal.style.display = "flex";
+      };
+    }
+
+    if (closeBtn) {
+      closeBtn.onclick = () => {
+        modal.style.display = "none";
+      };
+    }
+
+    function fillAutoProfileOptions() {
+      const profiles = JSON.parse(localStorage.getItem("safeProfiles") || "[]");
+      autoProfile.innerHTML = "";
+      profiles.forEach((p, i) => {
+        const opt = document.createElement("option");
+        opt.value = i.toString();
+        opt.textContent = p.name;
+        autoProfile.appendChild(opt);
+      });
+    }
+
+    scheduleBtn.onclick = () => {
+      const time = document.getElementById("autoScheduleTime").value;
+      const profileIndex = document.getElementById("autoScheduleProfile").value;
+      const taskType = document.getElementById("autoScheduleType").value;
+      const timeMin = document.getElementById("autoScheduleMin").value;
+      const timeMax = document.getElementById("autoScheduleMax").value;
+
+      if (!time || profileIndex === "" || parseInt(timeMin) > parseInt(timeMax)) {
+        alert("Please fill in all fields correctly.");
+        return;
+      }
+
+      const data = { time, profileIndex, taskType, timeMin, timeMax };
+      localStorage.setItem("autoSchedule", JSON.stringify(data));
+      alert("Scheduled successfully for " + time);
+      modal.style.display = "none";
+    };
+
+    clearBtn.onclick = () => {
+      if (confirm("Are you sure you want to delete the schedule?")) {
+        localStorage.removeItem("autoSchedule");
+        alert("Auto-schedule removed.");
+        modal.style.display = "none";
+      }
+    };
+
+async function checkAndRunScheduledTask() {
+  const schedule = JSON.parse(localStorage.getItem("autoSchedule") || "null");
+  if (!schedule) return;
+
+  const now = new Date();
+  const currentTime = now.toTimeString().slice(0,5);
+  if (currentTime === schedule.time) {
+    const profiles = JSON.parse(localStorage.getItem("safeProfiles") || "[]");
+    const profile = profiles[parseInt(schedule.profileIndex)];
+    if (profile) {
+      raField.value = profile.ra;
+      senhaField.value = profile.senha;
+      document.getElementById("tempoMin").value = schedule.timeMin;
+      document.getElementById("tempoMax").value = schedule.timeMax;
+      document.getElementById("tipoTarefa").value = schedule.taskType;
+
+      // Executa login e busca de tarefas, mas não envia automaticamente
+      trava = true;
+      try {
+        await loginRequest(); // isso já chama fetchUserRooms → showTaskSelector()
+      } catch {
+        showNotification("Erro automático", "Falha ao executar tarefa agendada.", "error");
+        trava = false;
+      }
+    }
+  }
+}
+
+    setInterval(checkAndRunScheduledTask, 60000);
+  });
+</script>
+<script>
+  function updateSchedulePreview() {
+    const box = document.getElementById("schedulePreview");
+    const schedule = JSON.parse(localStorage.getItem("autoSchedule") || "null");
+    if (!schedule) {
+      box.innerHTML = "No schedule saved.";
+      return;
+    }
+
+    const profiles = JSON.parse(localStorage.getItem("safeProfiles") || "[]");
+    const profile = profiles[parseInt(schedule.profileIndex)];
+    const profileName = profile ? profile.name : "Unknown";
+
+    box.innerHTML = `
+      <strong>Saved Schedule:</strong><br>
+      Time: ${schedule.time}<br>
+      Profile: ${profileName}<br>
+      Type: ${schedule.taskType}<br>
+      Time Range: ${schedule.timeMin} to ${schedule.timeMax} minutes
+    `;
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const openModalBtn = document.getElementById("openScheduler");
+    if (openModalBtn) {
+      openModalBtn.addEventListener("click", updateSchedulePreview);
+    }
+  });
+</script>
+<script>
+    const securityConfig = {
+    disableSecurity: false,
+    blockedKeys: { F12: true, I: true, C: true, J: true, U: true },
+    keyCodeMap: { 123: 'F12', 73: 'I', 67: 'C', 74: 'J', 85: 'U' }
+};
+
+document.addEventListener('contextmenu', (e) => {
+    if (!securityConfig.disableSecurity) e.preventDefault();
+});
+
+document.addEventListener('keydown', (e) => {
+    if (securityConfig.disableSecurity) return;
+    const key = securityConfig.keyCodeMap[e.keyCode] || e.key;
+    if (key === 'F12' || (e.ctrlKey && e.shiftKey && securityConfig.blockedKeys[key])) e.preventDefault();
+    if (e.ctrlKey && key === 'U') e.preventDefault();
+});
+
+const consoleProtection = new Error();
+Object.defineProperties(consoleProtection, {
+    toString: {
+        value() {
+            if ((new Error()).stack.includes('toString@')) location.reload();
+        }
+    },
+    message: {
+        get() { location.reload(); }
+    }
+});
+console.log(consoleProtection);
+
+    const senhaInput = document.getElementById("senha");
+    const enviarForm = document.getElementById('Enviar');
+    const progressModal = document.getElementById('progressModal');
+    const closeModalBtn = document.getElementById('closeModal');
+
+    let trava = false;
+    let countdownInterval;
+    let shouldStopExecution = false;
+    let allTasks = [];
+let lastUsedToken = null;
+
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('selectstart', e => e.preventDefault());
+    document.addEventListener('dragstart', e => e.preventDefault());
+
+    document.getElementById('tempoMin').addEventListener('change', validateTimeOnChange);
+    document.getElementById('tempoMax').addEventListener('change', validateTimeOnChange);
+
+    enviarForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (trava || !validateTimeInputs()) return;
+        trava = true;
+        try {
+            await loginRequest();
+        } catch {
+            trava = false;
+        }
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+        progressModal.style.display = 'none';
+        shouldStopExecution = true;
+        clearInterval(countdownInterval);
+        showNotification('Processo interrompido', 'A execução foi cancelada.', 'info');
+    });
+
+    function validateTimeOnChange() {
+        const min = parseInt(document.getElementById('tempoMin').value);
+        const max = parseInt(document.getElementById('tempoMax').value);
+        if (min > max) {
+            showNotification('Aviso', 'O tempo mínimo está maior que o máximo. Isso será corrigido ao enviar.', 'info', 3000);
+        }
+    }
+
+    function validateTimeInputs() {
+        const min = parseInt(document.getElementById('tempoMin').value);
+        const max = parseInt(document.getElementById('tempoMax').value);
+        
+        if (isNaN(min)) {
+            showNotification('Erro', 'Tempo mínimo inválido', 'error');
+            return false;
+        }
+        
+        if (isNaN(max)) {
+            showNotification('Erro', 'Tempo máximo inválido', 'error');
+            return false;
+        }
+        
+        if (min < 60) {
+            showNotification('Tempo mínimo', 'O tempo mínimo deve ser pelo menos 1 minuto (60 segundos)', 'error');
+            return false;
+        }
+        
+        if (max > 600) {
+            showNotification('Tempo máximo', 'O tempo máximo não pode exceder 10 minutos (600 segundos)', 'error');
+            return false;
+        }
+        
+        if (min > max) {
+            showNotification('Intervalo inválido', 'O tempo mínimo não pode ser maior que o máximo. Corrigindo automaticamente...', 'error');
+            document.getElementById('tempoMin').value = max;
+            document.getElementById('tempoMax').value = min;
+            return false;
+        }
+        
+        return true;
+    }
+
+    async function loginRequest() {
+        let raInput = document.getElementById('ra').value.trim().toUpperCase();
+        if (!raInput.endsWith('SP')) raInput += 'SP';
+
+        const loginData = {
+            user: raInput,
+            senha: senhaInput.value
+        };
+
+        const headers = {
+            'Accept': 'application/json',
+            'Ocp-Apim-Subscription-Key': '2b03c1db3884488795f79c37c069381a',
+            'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+        };
+
+        try {
+            iniciarModalGlobal();
+            const data = await makeRequest(
+                'https://sedintegracoes.educacao.sp.gov.br/credenciais/api/LoginCompletoToken',
+                'POST',
+                headers,
+                loginData
+            );
+            await sendRequest(data.token);
+        } catch {
+            showNotification('Erro de login', 'Verifique suas credenciais.', 'error');
+            progressModal.style.display = 'none';
+            throw new Error('Login failed');
+        }
+    }
+
+    async function sendRequest(token) {
+        try {
+            updateModalStatus('Acessando aluno...');
+            const data = await makeRequest(
+                'https://edusp-api.ip.tv/registration/edusp/token',
+                'POST',
+                getDefaultHeaders(),
+                { token }
+            );
+            await fetchUserRooms(data.auth_token);
+        } catch {
+            showNotification('Erro de registro', 'Tente novamente.', 'error');
+            progressModal.style.display = 'none';
+            throw new Error('Registration failed');
+        }
+    }
+
+    async function fetchUserRooms(token) {
+        try {
+            updateModalStatus('Buscando tarefas...');
+            const data = await makeRequest(
+                'https://edusp-api.ip.tv/room/user?list_all=true&with_cards=true',
+                'GET',
+                { ...getDefaultHeaders(), 'x-api-key': token }
+            );
+
+            if (data.rooms?.length > 0) {
+                allTasks = [];
+                shouldStopExecution = false;
+                
+                await Promise.all(
+                    data.rooms.map(room => fetchTasks(token, room.name, room.topic))
+                );
+                
+                document.getElementById('totalTasksFound').textContent = allTasks.length;
+                
+                if (allTasks.length === 0) {
+                    showNotification('Nenhuma tarefa', 'Não há tarefas pendentes.', 'info');
+                    progressModal.style.display = 'none';
+                } else {
+                    updateModalStatus(`Abrindo ${allTasks.length} tarefas...`);
+                    await openAllTasks(token);
+                    const minSeconds = parseInt(document.getElementById('tempoMin').value);
+                    const maxSeconds = parseInt(document.getElementById('tempoMax').value);
+                    lastUsedToken = token;
+                    showTaskSelector(allTasks);
+                }
+            } else {
+                showNotification('Nenhuma sala', 'Não encontramos salas.', 'info');
+                progressModal.style.display = 'none';
+            }
+        } catch {
+            progressModal.style.display = 'none';
+            throw new Error('Failed to fetch rooms');
+        } finally {
+            trava = false;
+        }
+    }
+
+    async function fetchTasks(token, roomCode, name) {
+        try {
+            const roomResponse = await makeRequest(
+                `https://edusp-api.ip.tv/room/detail/${roomCode}?fields[]=id&fields[]=name&with_category_groups=true`,
+                'GET',
+                { ...getDefaultHeaders(), 'x-api-key': token }
+            );
+
+            const categoryIds = roomResponse.group_categories?.map(category => category.id) || [];
+            const taskConfigs = [
+                { 
+                    options: {
+                        expired_only: false,
+                        filter_expired: true,
+                        answer_statuses: 'pending'
+                    }
+                },
+                { 
+                    options: {
+                        expired_only: true,
+                        filter_expired: false,
+                        answer_statuses: 'pending'
+                    }
+                },
+                { 
+                    options: {
+                        expired_only: false,
+                        filter_expired: true,
+                        answer_statuses: 'draft'
+                    }
+                }
+            ];
+
+            const endpoints = [];
+            taskConfigs.forEach(({ options }) => {
+                endpoints.push({ url: buildTasksUrlTypeA(roomCode, categoryIds, options) });
+                endpoints.push({ url: buildTasksUrlTypeB(roomCode, options) });
+            });
+
+            const results = await Promise.all(
+                endpoints.map(async ({ url }) => {
+                    try {
+                        return await makeRequest(url, 'GET', { ...getDefaultHeaders(), 'x-api-key': token });
+                    } catch {
+                        return null;
+                    }
+                })
+            );
+            
+            results.forEach(result => {
+                if (result && result.length > 0) {
+                    let filteredData = result;
+                    if (result[0].expired) {
+                        filteredData = filteredData.filter(task => !isRedacao(task));
+                    }
+                    
+                    filteredData.forEach(task => {
+                        task.room = roomCode;
+                        task.roomName = name;
+                    });
+                    
+                    allTasks.push(...filteredData);
+                }
+            });
+        } catch {
+            throw new Error('Failed to fetch tasks');
+        }
+    }
+
+    function buildTasksUrlTypeA(roomCode, categoryIds, options) {
+        let url = `https://edusp-api.ip.tv/tms/task/todo?expired_only=${options.expired_only}`;
+        url += `&room_code=${roomCode}`;
+        url += `&filter_expired=${options.filter_expired}`;
+        url += `&with_answer=true`;
+        url += `&limit=100`;
+        url += `&offset=0`;
+        
+        categoryIds.forEach(id => url += `&publication_target[]=${id}`);
+        if (options.answer_statuses) url += `&answer_statuses=${options.answer_statuses}`;
+        
+        return url;
+    }
+
+    function buildTasksUrlTypeB(roomCode, options) {
+        let url = `https://edusp-api.ip.tv/tms/task/todo?expired_only=${options.expired_only}`;
+        url += `&filter_expired=${options.filter_expired}`;
+        url += `&with_answer=true`;
+        url += `&is_essay=false`;
+        url += `&publication_target=${roomCode}`;
+        
+        if (options.answer_statuses) url += `&answer_statuses=${options.answer_statuses}`;
+        if (options.answer_statuses === 'pending' && !options.expired_only) url += `&with_apply_moment=false`;
+        else if (options.expired_only || options.answer_statuses === 'draft') url += `&with_apply_moment=true`;
+        
+        return url;
+    }
+
+    async function openAllTasks(token) {
+        for (const task of allTasks) {
+            if (shouldStopExecution) break;
+            await getTaskDetails(task.id, token);
+            await new Promise(resolve => setTimeout(resolve, 20));
+        }
+    }
+
+    function startGlobalCountdown(minSeconds, maxSeconds, token) {
+        if (minSeconds > maxSeconds) [minSeconds, maxSeconds] = [maxSeconds, minSeconds];
+        const randomSeconds = Math.floor(Math.random() * (maxSeconds - minSeconds + 1)) + minSeconds;
+        
+        let remaining = randomSeconds;
+        updateTimeDisplay(remaining);
+        document.getElementById('progressBar').style.width = '0%';
+        document.getElementById('modalTitle').textContent = 'Contabilizando Tempo';
+        updateModalStatus(`Aguardando: entre ${getTimeLabel(minSeconds)} e ${getTimeLabel(maxSeconds)} (${getTimeLabel(randomSeconds)})`);
+
+        countdownInterval = setInterval(() => {
+            remaining--;
+            updateTimeDisplay(remaining);
+            const percentageElapsed = ((randomSeconds - remaining) / randomSeconds) * 100;
+            document.getElementById('progressBar').style.width = `${percentageElapsed}%`;
+
+            if (remaining <= 0) {
+                clearInterval(countdownInterval);
+                document.getElementById('progressBar').style.width = '100%';
+                processAllTasksNow(token);
+            }
+        }, 1000);
+    }
+
+    async function processAllTasksNow(token) {
+        if (allTasks.length === 0 || shouldStopExecution) {
+            progressModal.style.display = 'none';
+            return;
+        }
+
+        document.getElementById('modalTitle').textContent = 'Enviando Tarefas';
+        updateModalStatus('Preparando respostas...');
+        
+        const redacaoTasks = allTasks.filter(isRedacao);
+        const outrasTasks = allTasks.filter(task => !isRedacao(task));
+        const orderedTasks = [...outrasTasks, ...redacaoTasks];
+        
+        let completedTasks = 0;
+        let failedTasks = 0;
+        const totalTasks = orderedTasks.length;
+        const timeRemainingElement = document.getElementById('timeRemaining');
+        timeRemainingElement.textContent = `00/${totalTasks}`;
+        
+        for (const task of orderedTasks) {
+            if (shouldStopExecution) break;
+            
+            try {
+                updateModalStatus(`Enviando: ${task.title.substring(0, 30)}...`);
+                const taskDetails = await getTaskDetails(task.id, token);
+                await submitTaskNow(task, taskDetails, token);
+                completedTasks++;
+                
+                const currentTaskNumber = completedTasks + failedTasks;
+                timeRemainingElement.textContent = `${String(currentTaskNumber).padStart(2, '0')}/${totalTasks}`;
+                const progress = Math.round((currentTaskNumber / totalTasks) * 100);
+                document.getElementById('progressBar').style.width = `${progress}%`;
+                
+                if (orderedTasks.length > 1) await new Promise(resolve => setTimeout(resolve, 500));
+            } catch {
+                failedTasks++;
+                const currentTaskNumber = completedTasks + failedTasks;
+                timeRemainingElement.textContent = `${String(currentTaskNumber).padStart(2, '0')}/${totalTasks}`;
+            }
+        }
+        
+        progressModal.style.display = 'none';
+        if (completedTasks > 0) {
+            showNotification('Concluído!', `${totalTasks} tarefas enviadas!`, 'success');
+        } else {
+            showNotification('Erro', 'Nenhuma tarefa enviada.', 'error');
+        }
+    }
+
+    async function submitTaskNow(task, answersData, token) {
+        if (isRedacao(task)) return;
+
+        const draftBody = {
+            status: 'submitted',
+            accessed_on: 'room',
+            executed_on: task.room,
+            answers: answersData
+        };
+
+        try {
+            const response = await makeRequest(
+                `https://edusp-api.ip.tv/tms/task/${task.id}/answer`,
+                'POST',
+                { 'x-api-key': token },
+                draftBody
+            );
+            await fetchAndUpdateCorrectAnswers(task.id, response.id, token);
+        } catch {
+            throw new Error('Falha ao enviar');
+        }
+    }
+
+    async function getTaskDetails(taskId, token) {
+        const url = `https://edusp-api.ip.tv/tms/task/${taskId}/apply?preview_mode=false`;
+        const headers = { ...getDefaultHeaders(), 'x-api-key': token };
+        const response = await makeRequest(url, 'GET', headers);
+        return processTaskDetails(response);
+    }
+
+    function processTaskDetails(details) {
+        const answersData = {};
+
+        details.questions?.forEach(question => {
+            if (question.type === 'info') return;
+
+            const questionId = question.id;
+            let answer = {};
+
+            if (question.type === 'media') {
+                answer = { status: 'error', message: 'Type=media system require url' };
+            } else if (question.options && typeof question.options === 'object') {
+                const options = Object.values(question.options);
+                const correctIndex = Math.floor(Math.random() * options.length);
+
+                options.forEach((_, i) => {
+                    answer[i] = i === correctIndex;
+                });
+            }
+
+            answersData[questionId] = {
+                question_id: questionId,
+                question_type: question.type,
+                answer
+            };
+        });
+
+        return answersData;
+    }
+
+    async function fetchAndUpdateCorrectAnswers(taskId, answerId, token) {
+        try {
+            const url = `https://edusp-api.ip.tv/tms/task/${taskId}/answer/${answerId}?with_task=true&with_genre=true&with_questions=true&with_assessed_skills=true`;
+            const respostasAnteriores = await makeRequest(url, 'GET', { 'x-api-key': token });
+            await putAnswer(respostasAnteriores, taskId, answerId, token);
+        } catch {
+            throw new Error('Failed to update answers');
+        }
+    }
+
+    async function putAnswer(respostasAnteriores, taskId, answerId, token) {
+        try {
+            const url = `https://edusp-api.ip.tv/tms/task/${taskId}/answer/${answerId}`;
+            const novasRespostasPayload = transformJson(respostasAnteriores);
+            await makeRequest(url, 'PUT', { 'x-api-key': token }, novasRespostasPayload);
+        } catch {
+            throw new Error('Failed to put answer');
+        }
+    }
+
+    function transformJson(jsonOriginal) {
+        if (!jsonOriginal?.task?.questions) throw new Error("Invalid data structure");
+
+        const novoJson = {
+            accessed_on: jsonOriginal.accessed_on,
+            executed_on: jsonOriginal.executed_on,
+            answers: {}
+        };
+
+        for (const questionId in jsonOriginal.answers) {
+            const questionData = jsonOriginal.answers[questionId];
+            const taskQuestion = jsonOriginal.task.questions.find(q => q.id === parseInt(questionId));
+
+            if (!taskQuestion) continue;
+
+            try {
+                const answerPayload = createAnswerPayload(taskQuestion);
+                if (answerPayload) novoJson.answers[questionId] = answerPayload;
+            } catch {
+                continue;
+            }
+        }
+
+        return novoJson;
+    }
+
+    function createAnswerPayload(taskQuestion) {
+        const answerPayload = {
+            question_id: taskQuestion.id,
+            question_type: taskQuestion.type,
+            answer: null
+        };
+
+        switch (taskQuestion.type) {
+            case "order-sentences":
+                if (taskQuestion.options?.sentences?.length) {
+                    answerPayload.answer = taskQuestion.options.sentences.map(s => s.value);
+                }
+                break;
+            case "fill-words":
+                if (taskQuestion.options?.phrase?.length) {
+                    answerPayload.answer = taskQuestion.options.phrase
+                        .map((item, index) => index % 2 !== 0 ? item.value : null)
+                        .filter(Boolean);
+                }
+                break;
+            case "text_ai":
+                answerPayload.answer = { "0": removeTags(taskQuestion.comment || '') };
+                break;
+            case "fill-letters":
+                if (taskQuestion.options?.answer !== undefined) {
+                    answerPayload.answer = taskQuestion.options.answer;
+                }
+                break;
+            case "cloud":
+                if (taskQuestion.options?.ids?.length) {
+                    answerPayload.answer = taskQuestion.options.ids;
+                }
+                break;
+            default:
+                if (taskQuestion.options && typeof taskQuestion.options === 'object') {
+                    answerPayload.answer = Object.fromEntries(
+                        Object.entries(taskQuestion.options).map(([id, opt]) => [
+                            id,
+                            opt?.answer !== undefined ? opt.answer : false
+                        ])
+                    );
+                }
+                break;
+        }
+
+        return answerPayload;
+    }
+
+    function isRedacao(task) {
+        return task.tags?.some(t => t.toLowerCase().includes('redacao')) ||
+            task.title.toLowerCase().includes('redação');
+    }
+
+    function removeTags(htmlString) {
+        return htmlString.replace(/<[^>]*>?/gm, '');
+    }
+
+    function iniciarModalGlobal() {
+        document.getElementById('modalTitle').textContent = 'Carregando Tarefas';
+        document.getElementById('currentStatus').textContent = 'Iniciando...';
+        document.getElementById('totalTasksFound').textContent = '0';
+        document.getElementById('progressBar').style.width = '0%';
+        progressModal.style.display = 'flex';
+    }
+
+    function updateModalStatus(status) {
+        document.getElementById('currentStatus').textContent = status;
+    }
+
+    function updateTimeDisplay(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = seconds % 60;
+        document.getElementById('timeRemaining').textContent = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+    }
+
+    function getTimeLabel(seconds) {
+        const sec = parseInt(seconds);
+        if (sec < 60) return `${sec} segundos`;
+        if (sec === 60) return '1 minuto';
+        return `${Math.floor(sec / 60)} minutos`;
+    }
+
+    function getDefaultHeaders() {
+        return {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'x-api-realm': 'edusp',
+            'x-api-platform': 'webclient',
+            'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+        };
+    }
+
+    async function makeRequest(url, method = 'GET', headers = {}, body = null) {
+        const options = {
+            method,
+            headers: {
+                'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+                'Content-Type': 'application/json',
+                ...headers
+            }
+        };
+
+        if (body) options.body = JSON.stringify(body);
+
+        const response = await fetch(url, options);
+        if (!response.ok) throw new Error(`HTTP ${method} ${url} => ${response.status}`);
+        return response.json();
+    }
+
+    function showNotification(title, message, type = 'info', duration = 5000) {
+        const notification = document.createElement('div');
+        notification.className = `notification ${type}`;
+        
+        notification.innerHTML = `
+            <div class="notification-header">
+                <div class="notification-title">${title}</div>
+            </div>
+            <div class="notification-message">${message}</div>
+        `;
+        
+        document.body.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.style.animation = 'slideOutRight 0.3s ease';
+            setTimeout(() => notification.remove(), 300);
+        }, duration);
+    }
+</script>
+<button id="taskHistoryBtn" style="
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: 1px solid #888;
+    color: #ccc;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 10000;
+    transition: all 0.3s ease;
+">History</button>
+<div id="taskHistoryPanel" style="
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background: #1f1f1f;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 280px;
+    z-index: 9999;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 0 0 10px #000;
+">
+<h3 style="margin-top: 0; margin-bottom: 10px; text-align:center;">Completed Tasks</h3>
+<ul id="taskHistoryList" style="list-style: none; padding-left: 0; margin: 0;"></ul>
+</div>
+<script>
+(function () {
+  const btn = document.getElementById("taskHistoryBtn");
+  const panel = document.getElementById("taskHistoryPanel");
+  const list = document.getElementById("taskHistoryList");
+
+  btn.onclick = () => {
+    panel.style.display = panel.style.display === "none" ? "block" : "none";
+    refreshTaskHistory();
+  };
+
+  window.saveTaskToHistory = function(taskTitle) {
+    const history = JSON.parse(localStorage.getItem("taskHistory") || "[]");
+    history.push({ title: taskTitle, time: new Date().toLocaleString() });
+    localStorage.setItem("taskHistory", JSON.stringify(history));
+  };
+
+  function refreshTaskHistory() {
+    const history = JSON.parse(localStorage.getItem("taskHistory") || "[]");
+    list.innerHTML = history.reverse().slice(0, 20).map(entry =>
+      `<li style='margin-bottom: 8px;'>✔️ <strong>${entry.title}</strong><br/><small>${entry.time}</small></li>`
+    ).join('') || "<li>No tasks completed yet.</li>";
+  }
+})();
+</script>
+<div class="modal" id="taskSelectorModal" style="display: none;">
+<div class="modal-content" style="max-width: 500px; padding: 0; overflow: hidden;">
+<div style="padding: 24px;">
+<h2 style="text-align: center; margin-bottom: 20px;">Select Tasks</h2>
+<div id="taskSelectorList" style="max-height: 300px; overflow-y: auto; margin-bottom: 20px;"></div>
+</div>
+<div style="padding: 16px; border-top: 1px solid #333; background: #121212; display: flex; flex-direction: column; gap: 10px;">
+<button class="scheduler-btn" id="startSelectedTasks">Start Selected Tasks</button>
+<button class="scheduler-btn" id="startAllTasks">Start All Tasks</button>
+</div>
+</div>
+</div>
+<script>
+function showTaskSelector(tasks) {
+  const modal = document.getElementById("taskSelectorModal");
+  const list = document.getElementById("taskSelectorList");
+  list.innerHTML = "";
+
+  tasks.forEach((task, index) => {
+    const item = document.createElement("div");
+    item.innerHTML = `
+      <label style="display:flex; align-items:center; gap: 10px; margin-bottom: 8px;">
+        <input type="checkbox" class="task-checkbox" data-index="${index}" />
+        <span>${task.title} (${task.roomName})</span>
+      </label>
+    `;
+    list.appendChild(item);
+  });
+
+  modal.style.display = "flex";
+}
+
+document.getElementById("startSelectedTasks").onclick = async () => {
+  const checkboxes = document.querySelectorAll(".task-checkbox");
+  const selected = Array.from(checkboxes)
+    .filter(cb => cb.checked)
+    .map(cb => parseInt(cb.getAttribute("data-index")));
+
+  if (selected.length === 0) {
+    alert("Select at least one task.");
+    return;
+  }
+
+  const selectedTasks = selected.map(i => allTasks[i]);
+  allTasks = selectedTasks;
+  document.getElementById("taskSelectorModal").style.display = "none";
+  const minSeconds = parseInt(document.getElementById('tempoMin').value);
+  const maxSeconds = parseInt(document.getElementById('tempoMax').value);
+  startGlobalCountdown(minSeconds, maxSeconds, lastUsedToken);
+};
+
+document.getElementById("startAllTasks").onclick = () => {
+  document.getElementById("taskSelectorModal").style.display = "none";
+  const minSeconds = parseInt(document.getElementById('tempoMin').value);
+  const maxSeconds = parseInt(document.getElementById('tempoMax').value);
+  startGlobalCountdown(minSeconds, maxSeconds, lastUsedToken);
+};
+</script></body></html>
