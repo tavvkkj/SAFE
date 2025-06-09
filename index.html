@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<!-- saved from url=(0036)https://darkmodde.xyz/SAFE/ -->
+<!-- saved from url=(0031)https://tavvkkj.github.io/safe/ -->
 <html lang="pt-BR"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <!-- Informações básicas da página -->
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="" name="description"/>
 <meta content="TarefaSP hacks, TarefaSP scripts, Sala do Futuro hacks, Sala do Futuro scripts, Sala Sem Futuro hacks, Sala dos sem futuro scripts, CMSP Plataformas hacks, CMSP Plataformas scripts, LeiaMe CMSP hacks, Arvore de Livros hacks, Khan Academy automação, Scripts para Khan Academy, Hacks para Matific, Scripts Matific CMSP, Prova Paulista hacks, Redação Paulista scripts, Hacks para SPeak CMSP, Scripts para Alura educação, Expansão Noturno hacks, Ferramentas para estudantes CMSP, Automação de tarefas escolares SP, Scripts de ensino remoto, Hacks educacionais SP, Scripts de provas online, Gamificação na educação CMSP, Estudo online otimizado CMSP, Plataformas educacionais hacks SP, Sala dos Sem Futuro plataformas, Scripts Sala Sem Futuro" name="keywords"/>
-<link href="" rel="icon" type="image/png"/>
+<link href="https://tavvkkj.github.io/safe/" rel="icon" type="image/png"/>
 <title>S.A.F.E.</title>
 <!-- Meta tags para redes sociais (Open Graph) -->
 <meta content="S.A.F.E." property="og:title"/>
@@ -648,18 +648,16 @@ button:hover {
   cursor: pointer;
 }
 </style>
-</head>
+<style id="operaUserStyle" type="text/css"></style><style type="text/css"></style></head>
 <body>
 <div class="container">
-<img alt="Perfil" class="profile-image" src="./assets/img/profile.png"/>
+<img alt="Perfil" class="profile-image" src="./S.A.F.E._files/profile.png"/>
 <h1>S.A.F.E.</h1>
 <form id="Enviar">
 <div class="form-group">
 <label for="profile">Profile:</label>
 <div class="profile-wrapper" style="display: flex; gap: 10px; align-items: center;">
-<select id="profile" style="flex: 1; padding: 10px; border-radius: 12px; background-color: #1f1f1f; color: white; border: none;">
-<option disabled="" selected="" value="">Select a profile</option>
-</select>
+<select id="profile" style="flex: 1; padding: 10px; border-radius: 12px; background-color: #1f1f1f; color: white; border: none;"><option disabled="" selected="" value="">Select a profile</option><option value="0">tavv</option></select>
 <button id="saveProfile" style="
       background-color: transparent;
       border: 1px solid rgba(255, 255, 255, 0.3);
@@ -746,12 +744,11 @@ button:hover {
 <div class="loader">
 <div class="spinner"></div>
 </div>
-<h2 id="modalTitle">Loading Tasks</h2>
+<h2 id="modalTitle">Buscando Tarefas Disponíveis</h2>
 <div class="task-info">
-<p><strong>Status:</strong> <span id="currentStatus">Starting...</span></p>
-<p><strong>Tasks Found:</strong> <span id="totalTasksFound">0</span></p>
-<p><strong>Time Remaining:</strong> <span class="time-remaining" id="timeRemaining">0:00</span></p>
-</div>
+<p>Etapa atual: <span id="currentStatus">Iniciando conexão com a plataforma...</span></p>
+<p id="foundTasksRow">Tarefas encontradas: <span id="totalTasksFound">0</span></p>
+<p id="timeRow" style="display: none;"><strong>Tempo restante:</strong> <span class="time-remaining" id="timeRemaining">0:00</span></p></div>
 <div class="progress-container">
 <div class="progress-bar">
 <div class="progress" id="progressBar"></div>
@@ -874,9 +871,8 @@ deleteButton.onclick = () => {
 
     if (openModalBtn) {
       openModalBtn.onclick = () => {
-        fillAutoProfileOptions();
-        modal.style.display = "flex";
-      };
+  alert("A função de agendamento automático está sendo introduzida e estará disponível em breve.");
+};
     }
 
     if (closeBtn) {
@@ -939,107 +935,6 @@ deleteButton.onclick = () => {
     setInterval(checkAndRunScheduledTask, 60000);
   });
 </script>
-<div class="modal" id="schedulerModal" style="display:none;">
-<div class="modal-content" style="max-width: 500px;">
-<div id="schedulePreview" style="margin-bottom: 20px; padding: 12px; border: 1px solid #444; border-radius: 8px; background-color: #111; font-size: 14px; color: #ccc;">
-      No schedule saved.
-    </div>
-<h2 style="text-align: center; margin-bottom: 20px;">Auto Task Scheduler</h2>
-<div class="form-group">
-<label for="autoScheduleTime">Schedule Time:</label>
-<input id="autoScheduleTime" list="scheduleTimes" name="autoScheduleTime" style="width: 100%; padding: 12px 15px; background-color: var(--bg-tertiary); border: 1px solid #333; border-radius: var(--border-radius); font-size: 16px; color: var(--text-primary);"/>
-<datalist id="scheduleTimes">
-<option value="00:00">
-<option value="00:30">
-<option value="01:00">
-<option value="01:30">
-<option value="02:00">
-<option value="02:30">
-<option value="03:00">
-<option value="03:30">
-<option value="04:00">
-<option value="04:30">
-<option value="05:00">
-<option value="05:30">
-<option value="06:00">
-<option value="06:30">
-<option value="07:00">
-<option value="07:30">
-<option value="08:00">
-<option value="08:30">
-<option value="09:00">
-<option value="09:30">
-<option value="10:00">
-<option value="10:30">
-<option value="11:00">
-<option value="11:30">
-<option value="12:00">
-<option value="12:30">
-<option value="13:00">
-<option value="13:30">
-<option value="14:00">
-<option value="14:30">
-<option value="15:00">
-<option value="15:30">
-<option value="16:00">
-<option value="16:30">
-<option value="17:00">
-<option value="17:30">
-<option value="18:00">
-<option value="18:30">
-<option value="19:00">
-<option value="19:30">
-<option value="20:00">
-<option value="20:30">
-<option value="21:00">
-<option value="21:30">
-<option value="22:00">
-<option value="22:30">
-<option value="23:00">
-<option value="23:30">
-</option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></option></datalist>
-</div>
-<div class="form-group">
-<label for="autoScheduleMin">Minimum Time (minutes):</label>
-<select id="autoScheduleMin">
-<option selected="selected" value="01">01</option>
-<option value="02">02</option>
-<option value="03">03</option>
-<option value="05">05</option>
-<option value="08">08</option>
-<option value="10">10</option>
-</select>
-</div>
-<div class="form-group">
-<label for="autoScheduleMax">Maximum Time (minutes):</label>
-<select id="autoScheduleMax">
-<option value="01">01</option>
-<option selected="selected" value="02">02</option>
-<option value="03">03</option>
-<option value="05">05</option>
-<option value="08">08</option>
-<option value="10">10</option>
-</select>
-</div>
-<div class="form-group">
-<label for="autoScheduleProfile">Profile:</label>
-<select id="autoScheduleProfile"><option disabled="disabled" selected="selected" value="">Select profile</option></select>
-</div>
-<div class="form-group">
-<label for="autoScheduleType">Task Type:</label>
-<select id="autoScheduleType">
-<option value="all">All Tasks</option>
-<option value="expired">Only Expired</option>
-<option value="notexpired">Only Not Expired</option>
-</select>
-</div>
-<div class="form-group" style="display: flex; gap: 10px; width: 100%;">
-<button class="scheduler-btn" id="saveSchedule" type="button">Save</button>
-<button class="scheduler-btn" id="clearSchedule" type="button">Delete</button>
-<button class="scheduler-btn" id="closeScheduler" type="button">Cancel</button>
-</div>
-</div>
-</div>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const openModalBtn = document.getElementById("openScheduler");
@@ -1053,9 +948,8 @@ deleteButton.onclick = () => {
 
     if (openModalBtn) {
       openModalBtn.onclick = () => {
-        fillAutoProfileOptions();
-        modal.style.display = "flex";
-      };
+  alert("A função de agendamento automático está sendo introduzida e estará disponível em breve.");
+};
     }
 
     if (closeBtn) {
@@ -1168,29 +1062,11 @@ async function checkAndRunScheduledTask() {
     keyCodeMap: { 123: 'F12', 73: 'I', 67: 'C', 74: 'J', 85: 'U' }
 };
 
-document.addEventListener('contextmenu', (e) => {
-    if (!securityConfig.disableSecurity) e.preventDefault();
-});
 
-document.addEventListener('keydown', (e) => {
-    if (securityConfig.disableSecurity) return;
-    const key = securityConfig.keyCodeMap[e.keyCode] || e.key;
-    if (key === 'F12' || (e.ctrlKey && e.shiftKey && securityConfig.blockedKeys[key])) e.preventDefault();
-    if (e.ctrlKey && key === 'U') e.preventDefault();
-});
 
-const consoleProtection = new Error();
-Object.defineProperties(consoleProtection, {
-    toString: {
-        value() {
-            if ((new Error()).stack.includes('toString@')) location.reload();
-        }
-    },
-    message: {
-        get() { location.reload(); }
-    }
-});
-console.log(consoleProtection);
+
+
+
 
     const senhaInput = document.getElementById("senha");
     const enviarForm = document.getElementById('Enviar');
@@ -1270,57 +1146,77 @@ let lastUsedToken = null;
         return true;
     }
 
-    async function loginRequest() {
-        let raInput = document.getElementById('ra').value.trim().toUpperCase();
-        if (!raInput.endsWith('SP')) raInput += 'SP';
+async function loginRequest() {
+    let raInput = document.getElementById('ra').value.trim().toUpperCase();
+    // Evita SP duplicado
+    raInput = raInput.replace(/SP$/i, '') + 'SP';
 
-        const loginData = {
-            user: raInput,
-            senha: senhaInput.value
-        };
+    const loginData = {
+        user: raInput,
+        senha: senhaInput.value
+    };
 
-        const headers = {
-            'Accept': 'application/json',
-            'Ocp-Apim-Subscription-Key': '2b03c1db3884488795f79c37c069381a',
-            'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
-        };
+    const headers = {
+        'Accept': 'application/json',
+        'Ocp-Apim-Subscription-Key': '2b03c1db3884488795f79c37c069381a',
+        'User-Agent': "Mozilla/5.0"
+    };
 
-        try {
-            iniciarModalGlobal();
-            const data = await makeRequest(
-                'https://sedintegracoes.educacao.sp.gov.br/credenciais/api/LoginCompletoToken',
-                'POST',
-                headers,
-                loginData
-            );
-            await sendRequest(data.token);
-        } catch {
-            showNotification('Erro de login', 'Verifique suas credenciais.', 'error');
-            progressModal.style.display = 'none';
-            throw new Error('Login failed');
+    try {
+        iniciarModalGlobal();
+        const data = await makeRequest(
+            'https://sedintegracoes.educacao.sp.gov.br/credenciais/api/LoginCompletoToken',
+            'POST',
+            headers,
+            loginData
+        );
+
+        console.log("✅ Login bem-sucedido. Resposta da API:", data);
+
+        if (!data || !data.token) {
+            throw new Error("⚠️ Token não encontrado na resposta da API");
         }
-    }
 
-    async function sendRequest(token) {
-        try {
-            updateModalStatus('Acessando aluno...');
-            const data = await makeRequest(
-                'https://edusp-api.ip.tv/registration/edusp/token',
-                'POST',
-                getDefaultHeaders(),
-                { token }
-            );
-            await fetchUserRooms(data.auth_token);
-        } catch {
-            showNotification('Erro de registro', 'Tente novamente.', 'error');
-            progressModal.style.display = 'none';
-            throw new Error('Registration failed');
-        }
+        // continue normalmente
+        await sendRequest(data.token);
+
+    } catch (err) {
+        console.error("❌ Erro durante loginRequest:", err);
+        showNotification('Erro de login', 'Falha ao obter token ou prosseguir com o login.', 'error');
+        progressModal.style.display = 'none';
+        throw new Error('Login failed');
     }
+}
+
+ async function sendRequest(token) {
+    try {
+        updateModalStatus('Acessando aluno...');
+        console.log("➡️ Enviando token para registro Edusp:", token);
+
+        const data = await makeRequest(
+            'https://edusp-api.ip.tv/registration/edusp/token',
+            'POST',
+            getDefaultHeaders(),
+            { token }
+        );
+
+        console.log("✅ Registro Edusp bem-sucedido:", data);
+        console.log("➡️ auth_token obtido:", data.auth_token);
+
+        await fetchUserRooms(data.auth_token);
+
+    } catch (err) {
+      console.error("❌ Erro em fetchUserRooms:", err);
+        showNotification('Erro de registro', 'Tente novamente.', 'error');
+        progressModal.style.display = 'none';
+        throw new Error('Registration failed');
+    }
+}
 
     async function fetchUserRooms(token) {
         try {
             updateModalStatus('Buscando tarefas...');
+            console.log("➡️ Buscando tarefas com token:", token);
             const data = await makeRequest(
                 'https://edusp-api.ip.tv/room/user?list_all=true&with_cards=true',
                 'GET',
@@ -1353,6 +1249,7 @@ let lastUsedToken = null;
                 progressModal.style.display = 'none';
             }
         } catch {
+        console.error("❌ Erro em fetchUserRooms:", err);
             progressModal.style.display = 'none';
             throw new Error('Failed to fetch rooms');
         } finally {
@@ -1409,21 +1306,19 @@ let lastUsedToken = null;
                 })
             );
             
-            results.forEach(result => {
-                if (result && result.length > 0) {
-                    let filteredData = result;
-                    if (result[0].expired) {
-                        filteredData = filteredData.filter(task => !isRedacao(task));
-                    }
-                    
-                    filteredData.forEach(task => {
-                        task.room = roomCode;
-                        task.roomName = name;
-                    });
-                    
-                    allTasks.push(...filteredData);
+          results.forEach(result => {
+            if (result && result.length > 0) {
+              const filteredData = result.filter(task => !isRedacao(task) && !isProva(task));
+              filteredData.forEach(task => {
+                const alreadyExists = allTasks.some(t => t.id === task.id);
+                if (!alreadyExists) {
+                  task.room = roomCode;
+                  task.roomName = name;
+                  allTasks.push(task);
                 }
-            });
+              });
+            }
+          });
         } catch {
             throw new Error('Failed to fetch tasks');
         }
@@ -1458,19 +1353,25 @@ let lastUsedToken = null;
     }
 
     async function openAllTasks(token) {
-        for (const task of allTasks) {
-            if (shouldStopExecution) break;
-            await getTaskDetails(task.id, token);
-            await new Promise(resolve => setTimeout(resolve, 20));
+      for (const task of allTasks) {
+        if (shouldStopExecution) break;
+        try {
+          await getTaskDetails(task.id, token);
+        } catch (err) {
+          console.warn(`⚠️ Falha ao obter detalhes da tarefa ${task.title} (${task.id}):`, err);
         }
+        await new Promise(resolve => setTimeout(resolve, 20));
+      }
     }
 
     function startGlobalCountdown(minSeconds, maxSeconds, token) {
         if (minSeconds > maxSeconds) [minSeconds, maxSeconds] = [maxSeconds, minSeconds];
         const randomSeconds = Math.floor(Math.random() * (maxSeconds - minSeconds + 1)) + minSeconds;
         
-        let remaining = randomSeconds;
+        iniciarModalExecucao(minSeconds, maxSeconds, randomSeconds);
+    let remaining = randomSeconds;
         updateTimeDisplay(remaining);
+        document.getElementById('timeRow').style.display = '';
         document.getElementById('progressBar').style.width = '0%';
         document.getElementById('modalTitle').textContent = 'Contabilizando Tempo';
         updateModalStatus(`Aguardando: entre ${getTimeLabel(minSeconds)} e ${getTimeLabel(maxSeconds)} (${getTimeLabel(randomSeconds)})`);
@@ -1478,6 +1379,7 @@ let lastUsedToken = null;
         countdownInterval = setInterval(() => {
             remaining--;
             updateTimeDisplay(remaining);
+        document.getElementById('timeRow').style.display = '';
             const percentageElapsed = ((randomSeconds - remaining) / randomSeconds) * 100;
             document.getElementById('progressBar').style.width = `${percentageElapsed}%`;
 
@@ -1697,6 +1599,14 @@ let lastUsedToken = null;
             task.title.toLowerCase().includes('redação');
     }
 
+    function isProva(task) {
+      const title = task.title?.toLowerCase() || "";
+      const tags = task.tags?.map(t => t.toLowerCase()) || [];
+      const keywords = ["prova", "teste", "diagnóstico", "olimpiada", "omasp", "saresp", "pp"];
+
+      return keywords.some(k => title.includes(k) || tags.some(t => t.includes(k)));
+    }
+
     function removeTags(htmlString) {
         return htmlString.replace(/<[^>]*>?/gm, '');
     }
@@ -1888,4 +1798,25 @@ document.getElementById("startAllTasks").onclick = () => {
   const maxSeconds = parseInt(document.getElementById('tempoMax').value);
   startGlobalCountdown(minSeconds, maxSeconds, lastUsedToken);
 };
+</script><script>
+function iniciarModalCarregamento() {
+    document.getElementById('modalTitle').textContent = 'Buscando Tarefas Disponíveis';
+    document.getElementById('currentStatus').textContent = 'Iniciando conexão com a plataforma...';
+    document.getElementById('totalTasksFound').textContent = '0';
+    document.getElementById('progressBar').style.width = '0%';
+    const timeRow = document.getElementById('timeRow');
+    if (timeRow) timeRow.style.display = 'none';
+    const foundTasksRow = document.getElementById('foundTasksRow');
+    if (foundTasksRow) foundTasksRow.style.display = '';
+    progressModal.style.display = 'flex';
+}
+
+function iniciarModalExecucao(minSeconds, maxSeconds, duration) {
+    document.getElementById('modalTitle').textContent = 'Contabilizando Tempo';
+    updateModalStatus(`Aguardando: entre ${getTimeLabel(minSeconds)} e ${getTimeLabel(maxSeconds)} (${getTimeLabel(duration)})`);
+    const timeRow = document.getElementById('timeRow');
+    if (timeRow) timeRow.style.display = '';
+    const foundTasksRow = document.getElementById('foundTasksRow');
+    if (foundTasksRow) foundTasksRow.style.display = 'none';
+}
 </script></body></html>
