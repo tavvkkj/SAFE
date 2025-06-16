@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let trava = false;
     let correct = false;
     let prova = false;
-    const urlG = 'https://cebolitos.ngrok.dev/';
+    const urlG = 'https://api.moonscripts.cloud/';
 
     // --- Gerenciamento de Perfil ---
     function loadProfiles() {
